@@ -74,7 +74,7 @@ export declare class SecureDfu extends EventDispatcher {
     /**
      * Sets the DFU mode of a device, preparing it for update
      * @param device The device to switch mode
-     * @returns Promise containing the device
+     * @returns Promise containing the device if it is still on a valid state
      */
     setDfuMode(device: BluetoothDevice): Promise<BluetoothDevice>;
     /**
